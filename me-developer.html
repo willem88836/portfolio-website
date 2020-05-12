@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Willem Meijer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="me-box">
+          <a  href="index.html"><img id="profile-picture" src="resources/resume/Profile_Picture.png"></a>
+          <a href="index.html"><h1 id="name">Willem Meijer</h1></a>
+      </div>
+      <div id="hotbar">
+        <a href="me-problem-solver.html"><p>Problem Solving</p></a>
+        <a href="index.html"><p>Home</p></a>
+        <a href="me-resume.html"><p>Resume</p></a>
+      </div>
+    </header>
+  </body>
+  <main>
+    <div class="cv-segment centered">
+      <p id="short-story">Here you can see a few snippets of C#, Java, and Python code to give you some idea of what I'm capable of. For convenience I tried to keep the snippets small. However, on my Github page you'll be able to find larger projects that show more of my skills!</p>
+      <a href="https://github.com/willem88836" target="_blank" title="Find me on Github!">
+        <img class="cv-buttons" src="resources/resume/github-logo.png">
+      </a>
+    </div>
+      
+    <!-- PYTHON CODE -->
+    <div class="panel-navigation code-panel">
+      <pre class="prettyprint lang-py">
+        <code id="code-display-py" class='language-py code-display'></code>
+      </pre>
+    </div>
+    <div class="panel-navigation code-panel">
+      <p>
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu dictum dolor, eget imperdiet nunc. Integer pellentesque pellentesque ullamcorper. Nunc ac lacus purus. Ut in elementum dolor. Phasellus convallis magna et vulputate fermentum. Nam venenatis cursus nunc. Donec gravida euismod erat vel consequat. Maecenas eu consectetur nibh. Nunc quis mi malesuada, ultrices urna ac, mattis est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque finibus libero sed volutpat pretium. Vivamus ultricies ornare velit, a volutpat velit vestibulum quis. Maecenas finibus, tortor eu semper placerat, diam nunc tempor purus, sed condimentum neque ante sit amet nisi. </p>
+    </div>
+
+    <!-- CS CODE -->
+    <div class="panel-navigation code-panel">
+      <pre class="prettyprint lang-cs">
+        <code id="code-display-cs" class='language-cs code-display'></code>
+      </pre>
+    </div>
+    <div class="panel-navigation code-panel">
+      <p>
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu dictum dolor, eget imperdiet nunc. Integer pellentesque pellentesque ullamcorper. Nunc ac lacus purus. Ut in elementum dolor. Phasellus convallis magna et vulputate fermentum. Nam venenatis cursus nunc. Donec gravida euismod erat vel consequat. Maecenas eu consectetur nibh. Nunc quis mi malesuada, ultrices urna ac, mattis est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque finibus libero sed volutpat pretium. Vivamus ultricies ornare velit, a volutpat velit vestibulum quis. Maecenas finibus, tortor eu semper placerat, diam nunc tempor purus, sed condimentum neque ante sit amet nisi. </p>
+    </div>
+    
+    <!-- JAVA -->
+    <div class="panel-navigation code-panel">
+        <pre class="prettyprint lang-java">
+          <code id="code-display-java" class='language-java code-display'></code>
+        </pre>
+      </div>
+      <div class="panel-navigation code-panel">
+        <p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu dictum dolor, eget imperdiet nunc. Integer pellentesque pellentesque ullamcorper. Nunc ac lacus purus. Ut in elementum dolor. Phasellus convallis magna et vulputate fermentum. Nam venenatis cursus nunc. Donec gravida euismod erat vel consequat. Maecenas eu consectetur nibh. Nunc quis mi malesuada, ultrices urna ac, mattis est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque finibus libero sed volutpat pretium. Vivamus ultricies ornare velit, a volutpat velit vestibulum quis. Maecenas finibus, tortor eu semper placerat, diam nunc tempor purus, sed condimentum neque ante sit amet nisi. </p>
+      </div>
+    </main>
+  <footer>
+    <p>Something Something All Rights Reserved (2020)</p>
+  </footer>
+  
+  <script src="src/script.js"></script>
+  <script>
+    document.getElementById("code-display-py").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/Portfolio_Willem_Meijer/master/%5B2019-02-20%5D_IntoReality/TimelineEventData.cs");
+    document.getElementById("code-display-cs").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/Portfolio_Willem_Meijer/master/%5B2019-02-20%5D_IntoReality/TimelineEventData.cs");
+    document.getElementById("code-display-java").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/Portfolio_Willem_Meijer/master/%5B2019-02-20%5D_IntoReality/TimelineEventData.cs");
+  </script>
+</html>
