@@ -124,43 +124,35 @@
         font-size:16px;
     }
 
-    #home > footer {
-        position:absolute;
-        bottom:0;
-        margin-bottom: 0;
-    }
     
 
-
-
-
-    /* SPECIFIC STUFF */
-    .panel-navigation {
+    /* GENERIC STUFF */
+    .panel {
         background: var(--color-E);
         margin: 25px 10px 45px 10px;
         box-shadow: 0 0 30px 10px var(--color-D);
     }
 
-    .panel-navigation img {
-        width: 100%;
-    }
-
-    .panel-navigation h1,
-    .panel-navigation h2 {
-        color:  var(--color-C);
-    }
-
-    .panel-navigation p {
+    .panel p, 
+    .panel h1,
+    .panel h2 {
         color: var(--color-C);
     }
 
-    .panel-navigation > .subtitle {
+
+
+    /* MENU SPECIFIC STUFF */
+    .menu-panel img {
+        width: 100%;
+    }
+
+    .menu-panel > .subtitle {
         text-align: center;
         background: var(--color-F);
         margin-top: -4px;
     }
 
-    .panel-navigation > .subtitle > h1 {
+    .menu-panel > .subtitle > h1 {
         color:  var(--color-C);
         white-space: nowrap;
         margin: 0;
@@ -168,6 +160,8 @@
     }
 
 
+
+    /* RESUME STUFF */
     .cv-panel > h1 {
         color:  var(--color-C);    
         max-width: 650px;
@@ -273,7 +267,7 @@
 
 @media(min-width:700px) {
     
-    .panel-navigation {
+    .panel {
         width: 650px;
         margin: 25px auto 45px auto;
     }
@@ -286,7 +280,6 @@
 }
 
 @media(min-width: 1250px) {
-
     #index {
         display:flex;
         flex-wrap:wrap;
@@ -301,14 +294,48 @@
         padding: 0 50px 0 50px; 
     }
 
-    .panel-navigation {
+    .menu-panel {
         width:500px;
     }
+
+
+
+
+    /* RESUME STUFF */
+    .cv-panels {
+        width: 80vw;
+        margin: auto;
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .cv-panels > :nth-child(2n + 1) {
+        order: 1;
+    }
+
+    .cv-panels > :nth-child(2n + 2) {
+        order: 2;
+    }
+
+    .cv-panels > :nth-child(-n + 2) {
+        page-break-before:always;
+        break-before: always;
+    }
+
+    .cv-panel > .panel {
+        width: 35vw;
+    }
+
+
+    /* PROBLEM SOLVER STUFF */
+
 }
 
 @media(min-width:1815px) {
-    /* #indexfooter {
-        bottom: 0;
-        position: fixed;
-    } */
+    #home > footer {
+        position:absolute;
+        bottom:0;
+        margin-bottom: 0;
+    }
 }
