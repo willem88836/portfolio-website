@@ -39,6 +39,11 @@
         color: var(--color-B);
     }
     
+    b {
+        font-style: normal;
+        color:  var(--color-C);
+    }
+
     br {
         margin: 8px;
         display: block;
@@ -69,7 +74,7 @@
         padding: 36px 36px 28px 36px;
         text-align: center;
         margin: auto;
-        height: max(24vh, 150px);
+        height: max(18vh, 150px);
     }
     
     #me-box #profile-picture {
@@ -82,7 +87,7 @@
         padding: 0;
         margin: 0;
         /* #me-box height divided by 6 */
-        font-size: max(4vh, 25px);
+        font-size: max(3vh, 25px);
     }
     
     #hotbar {
@@ -127,7 +132,7 @@
 
     
 
-    /* GENERIC STUFF */
+    /* GENERIC STYLES */
     .panel {
         background: var(--color-E);
         margin: 25px 10px 45px 10px;
@@ -140,9 +145,17 @@
         color: var(--color-C);
     }
 
+    #short-story {
+        color:  var(--color-C);
+        text-align: center;
+        margin: 0;
+        text-indent: 0;
+        padding: 8px 64px
+    }
 
 
-    /* MENU SPECIFIC STUFF */
+
+    /* MENU SPECIFIC STYLES */
     .menu-panel img {
         width: 100%;
     }
@@ -162,7 +175,21 @@
 
 
 
-    /* RESUME STUFF */
+    /* RESUME STYLES */
+    #cv-button-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 40px;
+    }
+
+    .cv-buttons {
+        width: 10vw;
+        max-width:65px;
+        display: inline-block;
+        padding: 16px;
+    }
+
     .cv-panel > h1 {
         color:  var(--color-C);    
         max-width: 650px;
@@ -187,34 +214,9 @@
         padding: 8px;
     }
 
-    .cv-segment b {
-        font-style: normal;
-        color:  var(--color-C);
-    }
-
-    #short-story {
-        color:  var(--color-C);
-        text-align: center;
-        margin: 0;
-        text-indent: 0;
-        padding: 8px 64px
-    }
-
-    #cv-button-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 40px;
-    }
-
-    .cv-buttons {
-        width: 10vw;
-        max-width:65px;
-        display: inline-block;
-        padding: 16px;
-    }
 
 
+    /* DEVELOPER STYLES */
     .code-display {
         font-size: auto;
         width: 100%;
@@ -231,9 +233,15 @@
 
 
 
+    /* PROBLEM SOLVER STYLES */
     .project-panel {
         padding:8px 32px;
         text-align: center;
+    }
+
+    .project-panel > h1 {
+        color: var(--color-C);
+        margin-top:0;
     }
 
     .project-description {
@@ -241,18 +249,8 @@
         margin-bottom: 25px;
     }
 
-    .project-description p {
-        color: var(--color-C);
-    }
-
     .project-panel .video {
         text-align: center;
-    }
-
-    .project-panel img {
-        width:95%;
-        height:auto;
-        border: 1px solid var(--color-C);
     }
 
     .project-panel .video > iframe {
@@ -260,9 +258,10 @@
         height: calc(80vw * 0.5625);
     }
 
-    .project-panel > h1 {
-        color: var(--color-C);
-        margin-top:0;
+    .project-panel img {
+        width:95%;
+        height:auto;
+        border: 1px solid var(--color-C);
     }
 }
 
@@ -278,6 +277,16 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .project-panel .video > iframe,
+    .project-description,
+    .project-panel img {
+        width: min(650px, 80vw);
+    }
+
+    .project-panel .video > iframe {
+        height: calc(min(650px, 80vw) * 0.5625);
+    }
 }
 
 @media(min-width: 1250px) {
@@ -285,7 +294,6 @@
         display:flex;
         flex-wrap:wrap;
         justify-content: center;
-
         bottom: 0;
         width: 100%;
     }   
@@ -330,7 +338,6 @@
 
 
     /* PROBLEM SOLVER STUFF */
-
 }
 
 @media(min-width:1815px) {
