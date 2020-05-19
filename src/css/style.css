@@ -349,6 +349,7 @@
 
     .project-description {
         margin: 0;
+        padding: 0;
         display: table-cell;
         vertical-align: middle;
     }
@@ -359,12 +360,14 @@
     }
 
     .project-contents img,
-    .project-contents .video > iframe {
-        width: 700px;
+    .project-contents .video > iframe,
+    .project-visual,
+    .project-description {
+        width: 38vw;
     }
 
     .project-contents .video > iframe {
-        height: calc(700px * 0.5625);
+        height: calc(38vw * 0.5625);
     }
 }
 
