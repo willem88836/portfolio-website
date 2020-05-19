@@ -265,8 +265,7 @@
     }
 }
 
-@media(min-width:700px) {
-    
+@media(min-aspect-ratio: 1/4) {
     .panel {
         width: 650px;
         margin: 25px auto 45px auto;
@@ -289,7 +288,7 @@
     }
 }
 
-@media(min-width: 1250px) {
+@media(min-aspect-ratio: 14/9) {
     #index {
         display:flex;
         flex-wrap:wrap;
