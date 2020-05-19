@@ -341,7 +341,7 @@
     }
 
     .project-contents {
-         display: flex;
+         display: table;
          width: 80vw;
          margin: auto;
          justify-content: space-around;
@@ -349,6 +349,13 @@
 
     .project-description {
         margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .project-description p {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .project-contents img,
