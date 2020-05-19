@@ -17,6 +17,11 @@
     
     a {
         text-decoration: none;
+        color:inherit;
+    }
+
+    a:hover {
+        color: var(--color-A);
     }
     
     h1, h2, h3, p {
@@ -102,9 +107,13 @@
         width: 300px;
     }
     
-    #hotbar p {
+    #hotbar a {
         font-size: 2.5vh;
         margin: 0;
+    }
+
+    #hotbar > a > p:hover {
+        color: var(--color-F);
     }
     
 
