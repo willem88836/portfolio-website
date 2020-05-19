@@ -308,9 +308,7 @@
     }
 
 
-
-
-    /* RESUME STUFF */
+    /* RESUME STYLES */
     .cv-panels {
         width: 80vw;
         margin: auto;
@@ -337,8 +335,32 @@
     }
 
 
-    /* PROBLEM SOLVER STUFF */
+    /* PROBLEM SOLVER STYLES */
+    .project-panel {
+        margin-bottom: 64px;
+    }
+
+    .project-contents {
+         display: flex;
+         width: 80vw;
+         margin: auto;
+         justify-content: space-around;
+    }
+
+    .project-description {
+        margin: 0;
+    }
+
+    .project-contents img,
+    .project-contents .video > iframe {
+        width: 700px;
+    }
+
+    .project-contents .video > iframe {
+        height: calc(700px * 0.5625);
+    }
 }
+
 
 @media(min-width:1815px) {
     #home > footer {
