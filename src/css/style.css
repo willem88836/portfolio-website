@@ -347,7 +347,8 @@
 
 
     /* PROBLEM SOLVER STYLES */
-    .project-panel {
+    .project-panel, 
+    .code-project-panel {
         margin-bottom: 64px;
     }
 
@@ -373,8 +374,13 @@
     .project-contents img,
     .project-contents .video > iframe,
     .project-visual,
-    .project-description {
+    .project-description,
+    .code-panel {
         width: 38vw;
+    }
+
+    .code-panel {
+        margin: 0;
     }
 
     .project-contents .video > iframe {
