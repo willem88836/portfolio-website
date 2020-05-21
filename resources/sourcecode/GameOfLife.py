@@ -53,7 +53,7 @@ class GameOfLife (threading.Thread):
 								if self.display[i][j] > 0:
 									n += 1
 							j += 1
-						# if there are exactly enough neighbours, the cell becomes alive
+						# if there are exactly enough neighbours, the cell becomes alive.
 						# if there are too few or many, it dies. 
 						# else, it stays whatever it is. 
 						s = self.display[y][x]
