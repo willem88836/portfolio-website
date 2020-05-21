@@ -43,7 +43,7 @@ class QuickSort
 				high--;
 			}
 
-			// Swapping;
+			// Swaps elements if necessary.
 			if (low <= high)
 			{
 				int temp = array[low];
