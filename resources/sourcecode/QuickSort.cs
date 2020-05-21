@@ -1,6 +1,6 @@
 using System;
 
-class QuickSort
+public class QuickSort
 {
     private static void Sort(ref int[] array)
     {
