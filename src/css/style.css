@@ -43,6 +43,11 @@
         font-size: 20px;
         color: var(--color-B);
     }
+
+    span {
+        -moz-tab-size: 4;
+        tab-size: 4;
+    }
     
     b {
         font-style: normal;
@@ -245,7 +250,6 @@
     .code-display {
         font-size: auto;
         width: 100%;
-        padding: 32px;
     }
 
     .code-panel {
@@ -257,10 +261,16 @@
         text-align: center;
     }
 
+    .prettyprint > .pln {
+        display:block;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
 
 
     /* PROBLEM SOLVER STYLES */
-
     .project-panel .video {
         text-align: center;
     }
