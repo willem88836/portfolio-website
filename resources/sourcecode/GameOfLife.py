@@ -9,7 +9,7 @@ class GameOfLife (threading.Thread):
 	display = None
 	time = 0
 
-	# prints the current display. 
+	# Prints the current display. 
 	def print(self):
 		os.system('cls')
 		i = 0
@@ -25,7 +25,7 @@ class GameOfLife (threading.Thread):
 			print("")
 			i += 1
 
-	# iterates through the display t times.
+	# Iterates through the display t times.
 	def run(self):
 		t = 0
 		while t < self.time:
@@ -33,7 +33,7 @@ class GameOfLife (threading.Thread):
 			self.print()
 			print(t - self.time)
 			time.sleep(1)
-			# iterates through all he different cells. 
+			# Iterates through all he different cells. 
 			y = 0
 			while y < len(self.display): 
 				x = 0
@@ -41,10 +41,10 @@ class GameOfLife (threading.Thread):
 					n = 0
 					i = y - 1
 					while i < y + 2:
-						# iterates through all the cell's neighbours. 
+						# Iterates through all the cell's neighbours. 
 						j = x - 1
 						while j < x + 2:
-							# only if it is in-bounds and not the current cell.
+							# Only if it is in-bounds and not the current cell.
 							if ((i >= 0) and 
 									(j >= 0) and 
 									(i < len(self.display)) and 
@@ -53,9 +53,9 @@ class GameOfLife (threading.Thread):
 								if self.display[i][j] > 0:
 									n += 1
 							j += 1
-						# if there are exactly enough neighbours, the cell becomes alive.
-						# if there are too few or many, it dies. 
-						# else, it stays whatever it is. 
+						# If there are exactly enough neighbours, the cell becomes alive.
+						# If there are too few or many, it dies. 
+						# Else, it stays whatever it is. 
 						s = self.display[y][x]
 						if n < 2 or n > 3: 
 							s = 0
@@ -68,7 +68,7 @@ class GameOfLife (threading.Thread):
 			self.display = displayCopy
 			t += 1
 
-	# initializes Conway's Game of Life.
+	# Initializes Conway's Game of Life.
 	def __init__(self, resX, resY, t):
 		threading.Thread.__init__(self)
 		self.display = []
