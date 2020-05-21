@@ -35,9 +35,9 @@ class GameOfLife (threading.Thread):
 			time.sleep(1)
 			# Iterates through all he different cells. 
 			y = 0
-			while y < len(self.display): 
+			while y < len(displayCopy): 
 				x = 0
-				while x < len(self.display[y]):
+				while x < len(displayCopy[y]):
 					n = 0
 					i = y - 1
 					while i < y + 2:
@@ -47,8 +47,8 @@ class GameOfLife (threading.Thread):
 							# Only if it is in-bounds and not the current cell.
 							if ((i >= 0) and 
 									(j >= 0) and 
-									(i < len(self.display)) and 
-									(j < len(self.display[i]) and 
+									(i < len(displayCopy)) and 
+									(j < len(displayCopy[i]) and 
 									((i != y) and (j != x)))):
 								if self.display[i][j] > 0:
 									n += 1
