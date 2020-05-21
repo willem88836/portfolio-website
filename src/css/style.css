@@ -159,7 +159,7 @@
         color: var(--color-C);
     }
 
-    #short-story {
+    .short-story {
         color:  var(--color-C);
         text-align: center;
         margin: 0;
@@ -297,7 +297,7 @@
         margin: 25px auto 45px auto;
     }
     
-    #short-story  {
+    .short-story  {
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;

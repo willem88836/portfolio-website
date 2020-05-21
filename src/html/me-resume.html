@@ -20,12 +20,7 @@
     </header>
     <main>
       <div class="cv-segment">
-        <p id="short-story">
-          Hi! I am Willem, an optimistic and widely interested software engineer. 
-          I am always looking for ways to implement new innovations in complicated projects for the better of the community and businesses.
-          <br>
-          In advance, thanks for looking at my resume, and I hope we can sit down for a cup of coffee some time!      
-        </p>
+        <p id="short-resume" class="short-story"></p>
         <div id="cv-button-container">
           <a href="https://www.linkedin.com/in/willem-meijer-74374010a/" target="_blank" title="Find me on Linkedin!">
             <img class="cv-buttons" src="../../resources/resume/linkedin-logo.png">
@@ -130,4 +125,8 @@
           </div>
       </footer>
   </body>
+  <script src="../js/script.js"></script>
+  <script>
+    document.getElementById("short-resume").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/willem88836.github.io/master/resources/texts/short-resume.html");
+  </script>
 </html>

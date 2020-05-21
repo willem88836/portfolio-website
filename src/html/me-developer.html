@@ -22,7 +22,7 @@
   </body>
   <main>
     <div class="cv-segment centered">
-      <p id="short-story">Here you can see a few snippets of C#, Java, and Python code to give you some idea of what I'm capable of. For convenience I tried to keep the snippets small. However, on my Github page you'll be able to find larger projects that show more of my skills!</p>
+      <p id="short-developer" class="short-story"></p>
       <a href="https://github.com/willem88836" target="_blank" title="Find me on Github!">
         <img class="cv-buttons" src="../../resources/resume/github-logo.png">
       </a>
@@ -88,6 +88,7 @@
   
   <script src="../js/script.js"></script>
   <script>
+    document.getElementById("short-developer").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/willem88836.github.io/master/resources/texts/short-developer.html");
     document.getElementById("code-display-py").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/willem88836.github.io/master/resources/sourcecode/GameOfLife.py");
     document.getElementById("code-display-cs").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/willem88836.github.io/master/resources/sourcecode/QuickSort.cs");
     document.getElementById("code-display-java").innerHTML = httpGet("https://raw.githubusercontent.com/willem88836/willem88836.github.io/master/resources/sourcecode/KruskalsAlgorithm.java");
