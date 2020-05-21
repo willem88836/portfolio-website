@@ -174,6 +174,10 @@
         width: 100%;
     }
 
+    .menu-panel {
+        width: 650px;
+    }
+
     .menu-panel > .subtitle {
         text-align: center;
         background: var(--color-F);
@@ -289,7 +293,7 @@
 
 @media(min-aspect-ratio: 1/4) {
     .panel {
-        width: 650px;
+        width: min(650px, 80vw);
         margin: 25px auto 45px auto;
     }
     
