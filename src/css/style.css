@@ -264,6 +264,7 @@
     .code-panel {
         padding: 8px;
         text-align:left;
+        overflow-x: scroll;
     }
 
     .centered {
