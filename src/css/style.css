@@ -167,6 +167,10 @@
         padding: 8px 64px
     }
 
+    .short-story a:hover {
+        color: var(--color-E);
+    }
+
 
 
     /* MENU SPECIFIC STYLES */
