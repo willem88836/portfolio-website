@@ -82,15 +82,6 @@
   
   <script src="../js/script.js"></script>
   <script>
-    document.getElementById("short-developer").innerHTML = httpGet(contentURL + "texts/short-developer.html");
-    
-    document.getElementById("code-display-py").innerHTML = httpGet(contentURL + "sourcecode/GameOfLife.py")
-    document.getElementById("commentary-game-of-life").innerHTML = httpGet(contentURL + "sourcecode/commentary-GameOfLife.html");
-
-    document.getElementById("code-display-cs").innerHTML = httpGet(contentURL + "sourcecode/QuickSort.cs");
-    document.getElementById("commentary-quick-sort").innerHTML = httpGet(contentURL + "sourcecode/commentary-QuickSort.html");
-
-    document.getElementById("code-display-java").innerHTML = httpGet(contentURL + "sourcecode/KruskalsAlgorithm.java");
-    document.getElementById("commentary-kruskals-algorithm").innerHTML = httpGet(contentURL + "sourcecode/commentary-KruskalsAlgorithm.html");
+    initializeDeveloper();
   </script>
 </html>
