@@ -9,7 +9,7 @@
     :root {
             --color-A:#f8f8f8;
             --color-B:#f4f4f4;
-            --color-C:#424242;
+            --color-C:#424242;  
             --color-D:#585858;
             --color-E:#aaaaaa;
             --color-F:#cccccc;
@@ -124,8 +124,7 @@
 
     /* FOOTER STYLES */
     footer {
-        height: 55px;
-    
+        height: 51px;
         background: var(--color-C);
         margin: -8px; 
         text-align: center;
@@ -142,6 +141,7 @@
     
     footer > div > p {
         font-size:16px;
+        color: var(--color-A);
     }
 
     
@@ -181,7 +181,7 @@
     .menu-panel img {
         width: 100%;
     }
-    
+
     .menu-panel > .subtitle {
         text-align: center;
         background: var(--color-F);
