@@ -181,11 +181,7 @@
     .menu-panel img {
         width: 100%;
     }
-
-    .menu-panel {
-        width: 650px;
-    }
-
+    
     .menu-panel > .subtitle {
         text-align: center;
         background: var(--color-F);
