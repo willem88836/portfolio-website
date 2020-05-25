@@ -72,7 +72,8 @@
     /* HEADER STYLES */
     header {
         position: sticky;
-        top: 0;
+        /* height + margin of the me-box times -1 */
+        top: calc(-1 * (max(18vh, 150px) + 64px));
         background: var(--color-C);
         margin: -8px -8px 32px -8px; 
         text-align: center;
@@ -102,7 +103,6 @@
     
     #hotbar {
         margin: auto;
-        padding-bottom:16px;
         display: flex;
         justify-content: center;
     }
