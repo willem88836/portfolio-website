@@ -301,7 +301,8 @@
     }
 }
 
-@media(min-aspect-ratio: 1/4) {
+@media(min-aspect-ratio: 1/4)
+    and (orientation: landscape) {
     .panel {
         width: min(650px, 80vw);
         margin: 25px auto 45px auto;
@@ -324,7 +325,8 @@
     }
 }
 
-@media(min-aspect-ratio: 14/9) {
+@media(min-aspect-ratio: 14/9)
+    and (orientation: landscape) {
     #index {
         display:flex;
         flex-wrap:wrap;
