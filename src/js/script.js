@@ -39,4 +39,8 @@ function initializeDeveloper() {
     loadRawContent("commentary-kruskals-algorithm", "sourcecode/commentary-KruskalsAlgorithm.html");
 }
 
-document.title = "Willem Meijer"; 
+var elements = document.getElementsByTagName("title");
+console.log(elements.length);
+
+
+document.title = "Willem Meijer"; 
