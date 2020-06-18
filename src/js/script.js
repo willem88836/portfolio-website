@@ -38,3 +38,5 @@ function initializeDeveloper() {
     loadRawContent("code-display-java", "sourcecode/KruskalsAlgorithm.java");
     loadRawContent("commentary-kruskals-algorithm", "sourcecode/commentary-KruskalsAlgorithm.html");
 }
+
+document.title = "Willem Meijer"; 
