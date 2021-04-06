@@ -43,7 +43,8 @@ h4 {
 	letter-spacing: 0.25px;
 }
 
-img {
+img, 
+.yt-video {
 	width: 100%;
 	overflow: hidden;
 }
@@ -1371,3 +1372,4 @@ section.buttons .container-fluid {
     margin-top:0;
     margin-bottom: 2em;
 }
+
