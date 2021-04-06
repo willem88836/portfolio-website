@@ -288,8 +288,12 @@ section {
 
 /* Right Image */
 section.right-image {
+	margin-top: 100px;
+	/* padding-bottom: 0px; */
+}
+
+section.last-image {
 	border-bottom: none;
-	padding-bottom: 0px;
 }
 
 .right-image {
