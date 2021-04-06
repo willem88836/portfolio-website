@@ -20,6 +20,10 @@ input, select, textarea {
 	outline: none;
 }
 
+a {
+    color: #116916
+}
+
 a:hover {
 	color: #FC3;
 	text-decoration: none;
@@ -52,14 +56,14 @@ button {
     background-color: transparent;
 	display: inline-block;
 	padding: 8px 20px;
-	color: #535ba0;
-	border: 2px solid #535ba0;
+	color: #278b2c;
+	border: 2px solid #278b2c;
 	transition: all 0.5s;
 }
 .primary-button a:hover,
 button:hover {
 	color: #fff;
-	background-color: rgba(83,91,160,1);
+	background-color: #116916;
 }
 
 section#search {
@@ -134,7 +138,7 @@ section {
 
 .main-banner .banner-content .banner-caption em {
 	font-style: normal;
-	color: #535ba0;
+	color: #278b2c;
 }
 
 .main-banner .banner-content .banner-caption span {
@@ -228,7 +232,7 @@ section {
 }
 
 .services .service-item:hover {
-	background-color: #535ba0;
+	background-color: #278b2c;
 }
 .services .service-item:hover h4,
 .services .service-item:hover p {
@@ -364,7 +368,7 @@ section.contact-form {
 .contact-form input:focus {
     outline: none;
     box-shadow: none;
-    border-color: #535ba0;
+    border-color: #278b2c;
 }
 
 .contact-form textarea {
@@ -385,7 +389,7 @@ section.contact-form {
 .contact-form textarea:focus {
     outline: none;
     box-shadow: none;
-    border-color: #535ba0;
+    border-color: #278b2c;
 }
 
 .contact-form button {
@@ -394,16 +398,16 @@ section.contact-form {
     text-transform: uppercase;
     display: inline-block;
     padding: 8px 20px;
-    color: #535ba0;
+    color: #278b2c;
     background-color: transparent;
-    border: 2px solid #535ba0;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
     cursor: pointer;
 }
 
 .contact-form button:hover {
     color: #fff;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 
 
@@ -548,7 +552,7 @@ ul.table-pagination li a {
 
 ul.table-pagination li a:hover,
 ul.table-pagination li.active a {
-    background-color: #535ba0;
+    background-color: #278b2c;
     color: #fff;
 }
 
@@ -597,7 +601,7 @@ section.forms .container-fluid {
 .forms textarea:focus {
     outline: none;
     box-shadow: none;
-    border-color: #535ba0;
+    border-color: #278b2c;
 }
 
 .forms .radio-item,
@@ -672,7 +676,7 @@ input[type="radio"] + label:before {
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
     content: '\f00c';
-    background-color: #535ba0;
+    background-color: #278b2c;
     color: #fff;
 }
 
@@ -710,12 +714,12 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 .filled-rectangle-button a:hover {
-    color: #535ba0;
+    color: #278b2c;
     background-color: rgba(83,91,160,0.25);
 }
 
@@ -731,14 +735,14 @@ section.buttons .container-fluid {
     width: 100%;
     text-align: center;
     letter-spacing: 0.5px;
-    color: #535ba0;
-    border: 2px solid #535ba0;
+    color: #278b2c;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
 }
 .border-rectangle-button a:hover {
     color: #fff;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 
 .filled-radius-button {
@@ -754,9 +758,9 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
     border-radius: 5px;
 }
 .filled-radius-button a:hover {
@@ -776,15 +780,15 @@ section.buttons .container-fluid {
     width: 100%;
     text-align: center;
     letter-spacing: 0.5px;
-    color: #535ba0;
-    border: 2px solid #535ba0;
+    color: #278b2c;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 5px;
 }
 .border-radius-button a:hover {
     color: #fff;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 
 .filled-rounded-button {
@@ -800,9 +804,9 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
     border-radius: 20px;
 }
 .filled-rounded-button a:hover {
@@ -822,15 +826,15 @@ section.buttons .container-fluid {
     width: 100%;
     text-align: center;
     letter-spacing: 0.5px;
-    color: #535ba0;
-    border: 2px solid #535ba0;
+    color: #278b2c;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 20px;
 }
 .border-rounded-button a:hover {
     color: #fff;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 
 .filled-icon-button {
@@ -849,9 +853,9 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
     border-radius: 20px;
 }
 .filled-icon-button a:hover {
@@ -874,15 +878,15 @@ section.buttons .container-fluid {
     width: 100%;
     text-align: center;
     letter-spacing: 0.5px;
-    color: #535ba0;
-    border: 2px solid #535ba0;
+    color: #278b2c;
+    border: 2px solid #278b2c;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 20px;
 }
 .border-icon-button a:hover {
     color: #fff;
-    background-color: rgba(83,91,160,1);
+    background-color:#116916;
 }
 
 /* Page Heading */
@@ -1196,7 +1200,7 @@ section.buttons .container-fluid {
 }
 
 .owl-carousel button.active {
-	background-color: #535ba0!important;
+	background-color: #278b2c!important;
 }
 
 
@@ -1208,7 +1212,7 @@ section.buttons .container-fluid {
     display: -ms-flex;
     display: flex;
     position: relative;
-    background-color: #535ba0;
+    background-color: #116916;
     margin: -100px -100px 100px -100px;
 }
 
@@ -1280,7 +1284,7 @@ section.buttons .container-fluid {
 
 #menu ul a:hover,
 #menu ul span:hover {
-    color: #535ba0;
+    color: #278b2c;
 }
 
 #menu ul a.opener,
@@ -1318,7 +1322,7 @@ section.buttons .container-fluid {
 
 #menu ul a.opener:hover:before,
 #menu ul span.opener:hover:before {
-    color: #535ba0;
+    color: #278b2c;
 }
 
 #menu ul a.opener.active + ul,
