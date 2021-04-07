@@ -1368,8 +1368,39 @@ section.buttons .container-fluid {
     padding-top: 0;
 }
 
+
+
 .resume-content p {
     margin-top:0;
     margin-bottom: 2em;
+}
+
+.resume-image {
+    margin-bottom: 1rem;
+}
+
+.resume-image img {
+    border-radius: 50%;
+    max-width:70%;
+}
+
+.resume-image {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .resume-image {
+        flex: 0 0 30%;
+        max-width:30%;
+    }
+
+    .resume-image img {
+        max-width: auto;
+    }
+
+    .resume-info {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
 }
 
