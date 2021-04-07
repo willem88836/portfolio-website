@@ -35,7 +35,7 @@
             <!-- Header -->
             <header id="header">
               <div class="logo">
-                <a href="index.html">Willem Meijer</a>
+                <a id="display-name" href="index.html">Willem Meijer</a>
               </div>
             </header>
 
@@ -460,7 +460,16 @@
           ageField.innerHTML = "(" + years + ")"; 
         }
 
+        function setMyDisplayName() {
+          if (typeof window.orientation !== 'undefined') { 
+            var displayName = document.getElementById("display-name");
+            displayName.innerHTML = "W. Meijer";
+          }
+        }
+
         setMyAge();
+        setMyDisplayName();
+
       </script>
   </body>
 </html>
