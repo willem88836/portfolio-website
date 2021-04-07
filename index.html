@@ -154,7 +154,7 @@
                             <h4>Personal Info</h4>
                             <p>
                               <strong>Name:</strong> Willem Meijer <br> 
-                              <strong>Birthday:</strong> 02-02-1998 (23) <br> 
+                              <strong>Birthday:</strong> 02-02-1998 <span id="my-age"></span> <br> 
                               <strong>Email:</strong> <a href="mailto:me@wmeijer.com">me@wmeijer.com</a> <br>
                               <strong>Nationality:</strong> Dutch <br> 
                               <strong>Address:</strong> Groningen, NL <br>
@@ -450,5 +450,17 @@
       <script src="assets/js/transition.js"></script>
       <script src="assets/js/owl-carousel.js"></script>
       <script src="assets/js/custom.js"></script>
+
+      <script>
+        function setMyAge(){
+          var ageField = document.getElementById('my-age');
+          var dif_ms = Date.now() - new Date(1998, 02, 02);
+          var age = new Date(dif_ms);
+          var years = Math.abs(age.getUTCFullYear() - 1970);
+          ageField.innerHTML = "(" + years + ")"; 
+        }
+
+        setMyAge();
+      </script>
   </body>
 </html>
