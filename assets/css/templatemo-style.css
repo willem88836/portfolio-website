@@ -1404,3 +1404,11 @@ section.buttons .container-fluid {
     }
 }
 
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
