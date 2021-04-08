@@ -7,8 +7,9 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-    <title>Willem Meijer</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/title-icon.ico" />
+
+    <title>Willem Meijer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -468,25 +469,9 @@
           }
         }
 
-        function forceTitleName() {
-          var titles = parent.document.getElementsByTagName('title');
-          console.log(titles.length);
-          for(var i = 0; i < titles.length; i++) {
-            titles[i].innerHTML = "Willem Meijer";
-          }
-        }
-
-        function forceTitleIcon() {
-          var head = parent.document.getElementsByTagName('head');
-          for(var i = 0; i < head.length; i++) {
-            head[i].innerHTML = head[i].innerHTML + `<link rel="shortcut icon" type="image/x-icon" href="assets/title-icon.ico" />`;
-          }
-        }
-
         setMyAge();
         setMyDisplayName();
-        forceTitleName();
-        forceTitleIcon();
+
       </script>
   </body>
 </html>
