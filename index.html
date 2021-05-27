@@ -435,13 +435,15 @@
             <footer id="footer">
               <p class="copyright">Copyright &copy; 2021 Willem Meijer
               <br>Website Template Designed by <a rel="nofollow" target="_blank" href="https://www.facebook.com/templatemo">Template Mo</a>
-              <br>Photo by <a rel="nofollow" target="_blank" href="https://www.pexels.com/@seven11nash?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Marc Mueller</a> from <a rel="nofollow" target="_blank" href="https://www.pexels.com/photo/green-leafed-plants-380768/">Pexels</a></p>
+              <br>Photo by <a rel="nofollow" target="_blank" href="https://www.pexels.com/@seven11nash?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Marc Mueller</a> from <a rel="nofollow" target="_blank" href="https://www.pexels.com/photo/green-leafed-plants-380768/">Pexels</a>
+              <br>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a></p>
             </footer>
 
           </div>
         </div>
-
       </div>
+
+      <button onclick="scrollToTop()" id="to-top-button" title="Scroll to top"><img src="assets/images/up-arrow.png"></button> 
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
@@ -472,7 +474,26 @@
 
         setMyAge();
         setMyDisplayName();
+      </script>
 
+      <script> 
+        mybutton = document.getElementById("to-top-button");
+        window.onscroll = function() {scrollFunction()};
+
+        // enables/disables the button based on the current scroll value. 
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // scrolls to the top of the frame.
+        function scrollToTop() {
+          document.body.scrollTop = 0; 
+          document.documentElement.scrollTop = 0; 
+        } 
       </script>
   </body>
 </html>
