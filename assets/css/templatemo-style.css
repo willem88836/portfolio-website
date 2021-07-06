@@ -1376,6 +1376,10 @@ section.buttons .container-fluid {
     margin-bottom: 2em;
 }
 
+.resume-content .no-margin-bottom {
+    margin-bottom: 0em;
+}
+
 .resume-image {
     margin-bottom: 1rem;
 }
@@ -1435,3 +1439,4 @@ section.buttons .container-fluid {
   #to-top-button:hover {
     background-color: rgb(173, 173, 173); /* Add a dark-grey background on hover */
   }
+
