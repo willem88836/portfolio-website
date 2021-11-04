@@ -1415,6 +1415,10 @@ section.buttons .container-fluid {
     {
         display: none !important;
     }
+
+    .top-image{
+        margin: 0; 
+    }
 }
 
 #to-top-button {
